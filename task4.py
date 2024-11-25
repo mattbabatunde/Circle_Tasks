@@ -36,11 +36,11 @@ class Solution(object):
         
        
         for i, num in enumerate(nums):
-            complement = target - num 
+            diff = target - num 
             
            
-            if complement in num_to_index:
-                return [num_to_index[complement], i]
+            if diff in num_to_index:
+                return [num_to_index[diff], i]
             
     
             num_to_index[num] = i
